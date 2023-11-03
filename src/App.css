@@ -1,0 +1,111 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  background-image: url('../src/App/image/backgroundhotel.png'); /* Add the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white; /* Set text color to white for better visibility */
+  font-family: Arial, sans-serif;
+}
+.booking-table-container {
+  width: 80%;
+    /* Media query for screens smaller than 768px (typical mobile screens) */
+    @media (max-width: 768px) {
+      width: 90%; /* Adjust the width for mobile screens */
+      height: auto; /* Let the height be determined by content */
+    }
+}
+.reservation-form {
+  width: 40%;
+  height: auto; /* Let the height be determined by content */
+  align-items: center !important;
+  align-self: center;
+  padding: 5%;
+  border-radius: 10px 80px 10px 80px;
+  background-color: rgba(255, 255, 255, 0.7); /* RGB color with 0.8 (80%) opacity */
+  border: 1px solid rgb(0, 0, 0); /* Add a 5px wide solid border with a red color */
+    
+  /* Media query for screens smaller than 768px (typical mobile screens) */
+  @media (max-width: 768px) {
+    width: 90%; /* Adjust the width for mobile screens */
+    height: auto; /* Let the height be determined by content */
+  }
+}
+
+.ant-menu{
+  width: 100%;
+  height: auto; /* Let the height be determined by content */
+  background-color: rgba(255, 255, 255, 0.5); /* RGB color with 0.8 (80%) opacity */
+  color: black;
+
+
+}
+.heading {
+  color: #000000; /* Trendy color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-size: 42px; /* Adjust the font size as needed */
+  text-transform: uppercase; /* Uppercase text */
+  text-shadow: 2px 2px 2px #333; /* Add a subtle text shadow */
+  letter-spacing: 2px; /* Wider letter spacing */
+  animation: blink 1s infinite alternate; /* Add a blinking animation */
+}
+/* Apply custom styles to the form components */
+.reservation-form .ant-form-item-label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #0078d4; /* Custom label color */
+  font-size: 16px; /* Custom label font size */
+  width: 30%;
+  text-align: left;
+}
+
+.reservation-form .ant-input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px; /* Custom input font size */
+  color: #333; /* Custom input text color */
+}
+
+.reservation-form .ant-picker-input > input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px; /* Custom date picker input font size */
+  color: #333; /* Custom date picker input text color */
+}
+
+.reservation-form .ant-select-selector {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px; /* Custom select font size */
+  color: #333; /* Custom select text color */
+}
+
+/* Change the font, size, and color for the Reserve button */
+.reservation-form .ant-btn {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px; /* Custom button font size */
+  background-color: #ff6f61; /* Custom button background color */
+  border-color: #ff6f61; /* Custom button border color */
+  color: #fff; /* Custom button text color */
+  
+}
+
+/* Apply a hover effect to the Reserve button */
+.reservation-form .ant-btn:hover {
+  background-color: #ff5340; /* Custom button background color on hover */
+  border-color: #ff5340; /* Custom button border color on hover */
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
